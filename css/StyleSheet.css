@@ -1,0 +1,264 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Cairo&family=Tajawal&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Almarai', sans-serif;
+
+}
+/* start navbar */
+.navbar {
+    width: 100%;
+    background-color: #A6A6A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ul {
+    margin: 10px;
+    display: flex;
+
+}
+ul li {
+    list-style: none;
+    text-align: center;
+    margin: 5px;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+/* end navbar */
+
+/* start logo back */
+.logo-back {
+    width: 900px;
+    display: flex;
+    margin: 10px auto;
+    background-color: #29419b;
+}
+
+.logo-back img {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    order: 3;
+}
+
+.logo-back h3 {
+    text-align: right;
+    padding: 15px;
+    margin: 10px auto;
+    color: white;
+    order: 1;
+}
+.logo-center {
+    display: flex;
+    justify-content: center;
+}
+/* end logo back */
+.par-center {
+    width: 100%;
+    margin: 0 auto;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* start center */
+.center {
+
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+/* end center */
+
+/* start right */
+.right {
+    width: 630px;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ededed;
+}
+
+.right .title-log {
+    background-color: #ededed;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.right .title-log #title-login {
+    text-align: right;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+/* end right */
+
+/* start login */
+.login {
+    display:flex
+}
+form {
+    width: 100%;
+    height: 350px;
+}
+.username,
+.password,
+.bt-login-forget,
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 10px 0 10px;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+}
+
+.h3 {
+    text-align: right;
+    color: black;
+    order: 2;
+    flex: 1;
+    font-size: 15px;
+}
+
+.input-login {
+    height: 40px;
+    padding: 5px;
+    outline-color: #ededed;
+    text-align: right;
+    flex: 1.5;
+    box-shadow: 0 1px 5px #dbdbdb inset;
+    border: none;
+}
+
+.bt-login-forget {
+    width: 100%;
+    padding: 0;
+}
+
+.btt-login {
+    width: 100px;
+    height: 35px;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius:2px;
+    background-color: #f43554;
+    font-size:large;
+    cursor: pointer;
+}
+
+.bt-login-forget a {
+    color: black;
+    text-align: left;
+    text-decoration: none;
+}
+.sign-up {
+    height: 30px;
+    color: #221afb;
+}
+.sign-up a {
+    text-decoration: none;
+    color: #221afb;
+}
+/* end login */
+
+/* start left */
+.left {
+    width: 270px;
+}
+
+.bottom, .top {
+    border:1.3px solid #ededed;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.hh5 {
+    height: 40px;
+    background-color: #ededed;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.hh5 h5 {
+    color:black;
+    text-align: right;
+    font-size: 16px;
+    position: relative;
+    top:10px;
+    right:10px;
+}
+.bottom p , .top p {
+    color: black;
+    text-align: right;
+    margin: 5px;
+}
+/* end left */
+
+/* start footer */
+footer {
+    width: 100%;
+    background-color: #6a6a6a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: smaller;
+    direction: rtl;
+    padding: 10px 0;
+}
+footer p {
+    width: 900px;
+    margin: 10px;
+    line-height: 20px;
+    font-weight: normal;
+}
+/* end footer */
+@media only screen and (max-width:900px) {
+    .center {
+        justify-content: center;
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+   .left {
+       display: none;
+   }
+}
+@media only screen and (max-width:500px) {
+    .navbar ul li  {
+        max-height: 10px;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .username,
+    .password,
+    .bt-login-forget {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .sign-up {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .bt-login-forget {
+        justify-content: space-around;
+        align-items: center;
+        line-height: 50px;
+    }
+    .input-login {
+        order: 3;
+        margin: 10px 0 0;
+        width: 100%;
+        min-height: 40px;
+    }
+}
